@@ -1,0 +1,51 @@
+@import '~bootstrap/scss/bootstrap';
+
+// .notifications-component {
+//   display: none !important;
+// }
+
+.page-container {
+  max-width: calc(100% - 20px);
+  flex: 0 0 100%;
+  // padding-left: 265px;
+  margin: 0 auto;
+  max-height: 100vh;
+  height: 100vh;
+  overflow-y: auto;
+  @media only screen and (min-width: 1025px) {
+    padding-left: 265px;
+  }
+}
+.new-child-container .col {
+  padding: 0 !important;
+}
+
+// .middle {
+//   background: #f3f5f6;
+// }
+
+.child-container {
+  position: relative;
+  top: 100px;
+  padding-bottom: 70px;
+}
+
+@font-face {
+  font-family: Orbitron-Regular;
+  src: url('https://d2qrsf0anqrpxl.cloudfront.net/assets/fonts/Orbitron-Regular.ttf');
+}
+@font-face {
+  font-family: 'Averta Std';
+  src: url('https://d2qrsf0anqrpxl.cloudfront.net/assets/fonts/AvertaStd-Regular.ttf');
+}
+
+@media only screen and (max-width: 1024px) {
+  .page-container {
+    padding: 0;
+  }
+}
+@media (max-width: 900px) {
+  .page-container {
+    height: 96vh !important;
+  }
+}

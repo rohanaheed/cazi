@@ -1,0 +1,22 @@
+.metamask-error {
+    position: fixed;
+    color: #fff;
+    display: block !important;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    padding: 4px 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+    line-height: 1.3;
+    font-size: 14px;
+    background: #FB207F;
+    // max-height: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 999
+}

@@ -1,0 +1,111 @@
+.big-cards-container {
+    margin: 0 5px 0 0;
+    position: relative;
+    .header-sp{
+        display: inline-block;
+        position: relative;
+        right: -8px;
+        top: 5px;
+      }
+    .slider-container-title {
+        h5 {
+            font-weight: bold;
+            font-size: 18px;
+            margin-left: 10px;
+            margin-top: 60px;
+            margin-bottom: 25px;
+        }
+    }
+    .news-carousel-image {
+        position: relative;
+        display: block;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        cursor: pointer;
+        color: #0f161f;
+        background: white;
+        border-radius: 0.5rem;
+        object-fit: contain;
+    }
+    
+    .card-title {
+        font-weight: bold;
+        font-size: 17px;
+    }
+    .card-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-height: 3.75rem;
+        margin: 0px 0px 1rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: rgb(134, 151, 162);
+        text-overflow: ellipsis;
+    }
+    .footer-text {
+        color: rgb(134, 151, 162);
+        font-size: 12px;
+    }
+    .card-footer {
+        padding-left: 0;
+    }
+    .card-img-top {
+        box-shadow: inset 0 0 1px #000000;
+    }
+    .card {
+        background-color: #FFF0F6;
+        border-radius: 10px;
+        border: none;
+    }
+    .card-body {
+        padding: 1.25rem 0px;
+    }
+    .card-footer {
+        background: transparent;
+    }
+    .swiper-button-next::after {
+        display: none;
+    }
+    .swiper-button-next ,.swiper-button-prev{
+        display: none;
+    }
+    .previous-custom img{
+        transform: rotate(180deg);
+    }
+    .swiper-container{
+        position: static !important;
+        margin-left: 7px;
+    }
+    .next-custom{
+        background-image: url("https://d2qrsf0anqrpxl.cloudfront.net/assets/images/right-arrow-icon.svg");
+        background-repeat: no-repeat;
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        cursor: pointer;
+        toP: -3px;
+        right: 2px;
+        // left: 230px;
+    }
+    .previous-custom{
+        background-image: url("https://d2qrsf0anqrpxl.cloudfront.net/assets/images/left-arrow-icon.svg");
+        background-repeat: no-repeat;
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        cursor: pointer;
+        top: -3px;
+        right: 40px;
+        // left: 190px;
+    }
+    .swiper-button-disabled{
+        opacity: 0.4;
+    }
+    .previous-custom:focus , .next-custom:focus {
+        outline: none;
+    }
+    
+}

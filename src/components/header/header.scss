@@ -1,0 +1,740 @@
+.headerMain{
+    .my-navbar {
+        @media only screen and (min-width: 1025px) {
+            padding: 15px 48px 15px 32px;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    .headerWithLogo{
+        display: flex;
+        width: 150px;
+        outline: none;
+        img{
+            outline: none;
+            &:nth-child(1) {
+                margin-right: 6px;
+            }
+            max-width: 100%;
+            max-height: 36px;
+        } 
+    }
+    
+    #header-nav {
+        padding: 15px 42px 15px 32px;
+        @media only screen and (min-width: 1025px) {
+            padding: 0;
+        }
+        @media only screen and (max-width: 768px) {
+            padding: 15px 16px;
+        }
+        &.bg-light {
+            background-color: #fff !important;
+        }
+
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        right: 0;
+        @media only screen and (max-width: 574px) {
+            margin-left: -25px !important;
+            background-color: #fff !important;
+            height: 4rem;
+        }
+        .header-logo {
+            width: 30px;
+            margin-top: 6px;
+            background: #fb207f6b;
+            padding: 3px;
+            border-radius: 50%;
+        }
+        &.header-full-width {
+            width: 89%;
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+                right: 0;
+                left: 0;
+            }
+        }
+        &.header-half-width {
+            width: calc(100% - 250px);
+            right: 0;
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+            }
+        }
+        .menu-bar {
+            margin-right: 14px;
+            width: 24px;
+            cursor: pointer;
+            @media only screen and (min-width: 1025px) {
+                display: none;
+            }
+        }
+        .navbar-toggler {
+            @media only screen and (min-width: 575px) {
+                display: none;
+            }
+        }
+        .search-box {
+            border: none;
+            border-radius: 20px;
+            transition: width 0.2s ease-in-out 0s;
+            width: 20rem;
+        }
+
+        .buy-cazi-btn,
+        .login-btn {
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            color: #000000;
+            font-size: 16px;
+            background: #fff;
+            border: unset;
+            border-radius: 20px;
+            border: 1px solid #FB207F;
+            margin-left: 10px;
+            transition: .2s ease-in-out;
+            height: 2.5rem;
+            padding: 0 20px;
+            outline: none;
+            &:before {
+                content: '';
+                position: relative;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                background: #D8D8D8;
+                left: -24px;
+                border-radius: 50%;
+                outline: none;
+                border: none;
+            }
+
+            @media only screen and (max-width: 799px) {
+                font-size: 11px;
+                // margin-top: 8px;
+                padding: 8px 12px;
+            }
+
+        }
+
+        .buy-cazi-btn,
+        .login-btn:hover {
+            background-color: #FB207F;
+            border-color: transparent; 
+            color: #fff;
+        }
+
+        .buy-cazi-btn {
+            &:before {
+                display:none;
+            } 
+        }
+        .sign-up-btn {
+            display: inline-block;
+            min-height: 1.5rem;
+            font-family: inherit;
+            font-weight: 700;
+            text-decoration: none;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            transition: background-color 0.2s ease 0s;
+            white-space: nowrap;
+            color: #FB207F;
+            background-color: transparent;
+            font-size: 0.875rem;
+            padding: 6px 15px;
+            border: 1px solid #FB207F;
+            background: #fff;
+            margin-top: 3px;
+            @media only screen and (max-width: 799px) {
+                padding: 5px 8px;
+            }
+        }
+        .form-control:focus {
+            box-shadow: unset;
+        }
+    }
+    .my-navbar {
+        .nav-link {
+            color:#000 !important;
+        }
+        .tiger-img {
+            color: #FB207F;
+            padding-right: 0;
+            font-weight: 700;
+            span {
+                display:flex;
+                align-items: center;
+                img {
+                    width: 43px;
+                    height: 41px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .nav-tabs .nav-link{
+        color: rgb(134, 151, 162);
+        font-size: 0.875rem;
+        &.active{
+            color: rgb(15, 22, 31);
+        }
+    }
+   
+    
+    
+    .toggleButton{
+        background: transparent !important;
+        color: #000 !important;
+        border-radius: 100% !important;
+        border: none !important;
+        box-shadow: 13px 10px 10px rgba(0, 0, 0, 0.2) !important;
+        left: 226px;
+        position: fixed !important;
+        width: 15px;
+        height: 15px;
+        top: 21px;
+        // It has been hided now - no need it
+        display: none !important; 
+        @media only screen and (max-width: 574px) {
+            display: none !important;
+        }
+    }
+    .search-input{
+        border: none;
+        border-radius: 20px;
+        padding-left: 14px;
+        // margin-left: 65px;
+    }
+    .showHideDiv{
+        position: absolute;
+        z-index: 22;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 0.25rem 1rem 0px;
+        overflow-y: auto;
+        border-radius: 0.75rem;
+        min-width: 41.5rem;
+        z-index: 1000;
+        top:67px;
+    }
+    .enableDisableSidebar{
+        left:-48px
+    }
+    .my-tab-content{
+        padding: 15px;
+        .papular-search-icon{
+            span{
+                color: rgb(134, 151, 162);
+                font-size: 0.625rem;
+                line-height: 1rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 0.0625rem;
+            }
+        }
+    }
+    .unlock-btn:before{
+        content: none !important;
+    }
+    .unlock-btn{
+        img{
+            width: 24px;
+            margin-right: 10px;
+        }
+    }
+    .topLogoLink{
+        font-family: 'Orbitron-Regular';
+        font-size: 14px;
+        @media only screen and (max-width: 574px) {
+            left: 88px !important;
+        }
+        img{
+            margin-right:10px;
+            width: 50px;
+            display: inline-block;
+            position: relative;
+            left: 7px;
+            top: 3px;
+            display: inline-block;
+            @media only screen and (max-width: 574px) {
+                width:25px;
+                left: -36px;
+            }
+        }
+    }
+    .logoAndToggle{
+        position: fixed;
+        left: 309px;
+    }
+    .popular-ul{
+        list-style: none;
+        padding-left: 0;
+        .figure{
+            margin-bottom: 10px;
+        }
+        .popular-figure{
+            margin-bottom: 10px;
+        }
+        .figure-img{
+            float: left;
+            border-radius: 5px;
+        }
+        .info{
+            margin-top: 13px;
+            position: relative;
+            top: 11px;
+            left: 15px;
+            white-space: nowrap;
+            
+            font-size: 0.875rem;
+            line-height: 1.43;
+            font-weight: 500;
+            color: rgb(15, 22, 31);
+           
+            margin: 0px;
+            span{
+                color: rgb(134, 151, 162);
+                font-size: 0.625rem;
+                line-height: 1rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 0.0625rem;
+            }
+        }
+    }
+
+    .metaButton{
+        width: 160px;
+        background: #FB207F;;
+        color: white;
+        font-size: 14px;
+        border-radius: 23px;
+        padding: 9px;
+        margin-left: 5px;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .form-inline .form-control {
+            width: 180px;
+        }
+    }
+}
+
+@media only screen and (max-width: 799px) {
+    .login-btn:before {
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .headerWithLogo {
+        img {
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .headerMain {
+        #header-nav {
+            padding: 10px 14px;
+            justify-content: flex-start;
+            .buy-cazi-btn, 
+            .login-btn {
+                font-size: 10px;
+                padding: 10px;
+                height: 34px;
+                display: flex;
+                justify-content: center;
+                line-height: 11px;
+                img {
+                    width: 15px;
+                }
+            }
+            .buy-cazi-btn:before, 
+            .login-btn:before {
+                display: none;
+            }
+            .buy-cazi-btn{
+                &.logout{
+                    line-height: 11px;
+                padding-top: 8px;
+                }
+            }
+        }
+                
+        .headerWithLogo {
+            display: block;
+            width: 30px;
+            overflow: hidden;
+            outline: none;
+            img {
+                outline: none;
+                max-width: unset;
+                width: 30px;
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+
+        .my-navbar {
+            font-size: 14px;
+            .tiger-img img {
+                display: none;
+            }
+        }
+        
+    }
+}
+.logo-div {
+    @media only screen and (min-width: 1025px) {
+        width: 250px;
+        height: 90px;
+        border: 1px solid #EAEAEA;
+        border-left: unset;
+        border-top: unset;
+        border-bottom: unset;
+        text-align: center;
+        padding: 25px 25px;
+    }
+}
+
+.address-div{
+    margin: 0px 10px;
+    @media only screen and (max-width: 768px) {
+        margin-right: 0;
+    }
+    cursor: pointer;
+    display: inline-flex;
+    border: 1px solid #FB207F;
+    border-radius: 25px;
+    padding-left: 0px;
+    justify-content: space-between;
+    @media all and (max-width: 500px) {
+        font-size: 12px;
+        margin: 0px;
+    }
+    span{
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        display: inline-flex;
+        padding: 0 10px 0 10px;
+        .btn-price-icon {
+            width: 25px;
+            margin-right: 8px;
+            background: #efefef;
+            border-radius: 100%;
+        }
+    }
+    div{
+        color: white;
+        background: #FB207F;
+        padding: 8px;
+        border-radius: 25px;
+    }
+}
+
+.comming-soon-popup {
+    background-image: url('https://d2qrsf0anqrpxl.cloudfront.net/assets/images/popup-bg-min.png') !important;
+    background-color: transparent !important;
+    background-position: center bottom !important;
+    background-repeat: no-repeat !important;
+    background-size: auto 100% !important;
+    max-width: 500px;
+    .modal-header {
+        background: transparent;
+        .modal-title {
+            font-size: 20px;
+        }
+    }
+
+    .modal-content {
+        background: transparent;
+        height: 400px;
+    }
+
+    .modal-body-inner {
+       
+        h3 {
+            font-weight: bolder;
+            text-transform: uppercase;
+            margin: 14px 0 0 0;
+            color: #FB207F;
+            font-size: 30px;
+        }
+    }
+
+    .modal-header .close {
+        opacity: 1;
+        position: relative;
+        right: -6px;
+        top: 0px;
+        padding: 0;
+        img {
+            width: 30px;
+        }
+    }
+    
+    .popup-btn-img {
+        background-image: url('https://d2qrsf0anqrpxl.cloudfront.net/assets/images/popup-btn.png');
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        height: 65px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+    }
+}
+// .metamask-error{
+//     position: absolute;
+//     right: 45px;
+//     bottom: -18px;
+//     color: #ff0000;
+// }
+
+
+
+
+@media all and (min-width: 320px) {
+    .header-button-container{
+        display: none;
+    }   
+}
+
+
+@media all and (max-width: 500px) {
+    .navbar-nav button.login-btn.unlock-btn.btn.btn-light{
+        display: none !important;
+    }
+
+    .game-detail-main .game-overlay button.unlock-btn {
+        max-width: 100%;
+        height: auto;
+    }
+    
+} 
+
+.connect-btn-container{
+    @media all and (max-width: 500px) {
+        text-align: center;
+    }
+    .login-btn:hover {
+        background-color: #FB207F;
+        border-color: transparent; 
+        color: #fff;
+    }
+    .unlock-btn-wrapper{
+        position: relative;
+    }
+   
+    
+    .login-btn {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        color: #000000;
+        font-size: 16px;
+        background: #fff;
+        border: unset;
+        border-radius: 20px;
+        border: 1px solid #FB207F;
+        margin-left: 10px;
+        transition: .2s ease-in-out;
+        height: 2.5rem;
+        padding: 0 20px;
+        outline: none;
+        @media all and (max-width: 500px) {
+            font-size: 12px;
+            margin: 0 auto;
+        }
+        img{
+            width: 24px;
+            margin-right: 10px;
+        }
+        // &:before {
+        //     content: '';
+        //     position: relative;
+        //     display: inline-block;
+        //     width: 30px;
+        //     height: 30px;
+        //     background: #D8D8D8;
+        //     left: -24px;
+        //     border-radius: 50%;
+        // }
+        &:hover {
+            background-color: #FB207F;
+            border-color: transparent; 
+            color: #fff;
+        }
+    }
+}
+
+.modal-connect-ui-mobile{
+    max-width: 400px !important;
+    .wallet-connect-item{ 
+        border-bottom: 1px solid #FFFFFF!important;
+        flex: 0 0 100%!important;
+              max-width: 100%!important;
+        &:last-child{
+         border-bottom: 0px solid #FFFFFF!important;
+        }
+        &:first-child{
+            border-right: unset!important;
+        }
+        &:last-child{
+            border-right: unset!important;
+            border-bottom: unset!important;
+        }
+    }
+ 
+}
+
+.fadeOut{
+    opacity: 0;
+    transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
+    height: 0px !important;
+    padding: 0px !important;
+
+}
+ .fadeIn{
+    opacity:1;
+    // transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+
+}
+
+.button-loader.spinner-border{
+    height: 20px;
+    width: 20px;
+    border-width: 1px;
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+.connect-modal {
+    background: rgba(255, 255,255, 0.8) !important;
+}
+.modal-connect-ui{
+    @media (min-width: 768px){
+      max-width: 700px;
+    }
+    @media all and (max-width: 767px){
+        margin: 0 16px;
+    }
+    &.whiteBg{
+      .custom-content{
+        background: #FFF;
+        box-shadow: 0px 30px 46px rgba(0, 0, 0, 0.119154);
+        border:none;
+        h5{
+            color:#000 !important;
+        }
+        p{
+          color:#FB207F;
+          &.smallText {
+              font-size: 13px;
+          }
+        }
+      }
+      
+    }
+    .modal-content{
+      border-radius: 38px;
+      overflow: hidden;
+      color: #fff;
+        @media all and (max-width: 767px){
+            border-radius: 15px;
+        }
+      .modal-body{
+        padding: 0;
+        .wallet-connect-list{
+          display: flex;
+          flex-wrap: wrap;
+          box-sizing: border-box;
+          .wallet-connect-item{         
+            box-sizing: border-box;
+            flex: 0 0 100%;
+            max-width: 100%;
+            width: 100%;
+            outline: unset;
+            @media (max-width: 767px){
+             border-bottom: 1px solid #FFFFFF;
+             &:last-child{
+              border-bottom: 0px solid #FFFFFF;
+             }
+            }
+            @media (min-width: 768px){
+              flex: 0 0 50%;
+              max-width: 50%;
+            }
+            .cta-{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              transition: all 0.2s ease;
+              min-height: 210px;
+              &:hover{
+                background-color: #ffeef5;
+              }
+              h5{
+                text-transform: capitalize;
+                font-size: 24px;
+                font-family: 'Poppins';
+                font-weight: bold;
+                line-height: 30px;
+                margin-bottom: 5px;
+              }
+              img{
+                height: 45px;
+                margin-bottom: 17px;
+                &.wallet{
+                  height: 35px;
+                }
+              }
+
+            }
+            // border: 1px solid #FFFFFF;
+            &:first-child{
+                border-bottom: 1px solid #FB207F;
+                border-right: 1px solid #FB207F;
+                @media all and (max-width: 767px) {
+                    border-right: unset;
+                }
+            }
+            &.second-child{
+                border-bottom: 1px solid #FB207F;
+            }
+            &:last-child{
+                border-right: 1px solid #FB207F;
+                @media all and (max-width: 767px) {
+                    border-right: unset;
+                    border-bottom: unset;
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+
+@media all and (max-width: 767px) {
+    .header-connect-btn{
+       display: none;
+    }
+}
+body.modal-open{
+    .App{
+        filter: blur(10px);
+    }
+}

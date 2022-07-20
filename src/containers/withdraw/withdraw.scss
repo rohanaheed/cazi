@@ -1,0 +1,157 @@
+.custom-form-ui-hskdjhf{
+    max-width: 700px;
+    margin: 0 auto;
+    .txt.ttl{
+        color: #FB207F;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .title-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .transaction-fee{
+        font-size: 14px;
+        margin-top: 2px;
+    }
+    .card{
+        border-radius: 15px;
+        border: 3px solid #FB207F;
+    }
+    .deposit-form{
+        padding: 47px 60px 50px 60px;
+    }
+    .form-label{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .form-group{
+        position: relative;
+    }
+
+    .currency-select{
+        margin-top: 32px;
+    }
+    .desposite-input-container {
+        height: 50px;
+        border-radius: 10px;
+        border: 2px solid #FB207F;
+        width: 100%;
+    }
+    .max{
+        position: absolute;
+        display: block;
+        padding: 5px 8px;
+        background-color: #FB207F;
+        border-radius: 6px;
+        color: #FFFFFF;
+        font-size: 13px;
+        cursor: pointer;
+        right: 12px;
+        top: 45px;
+        transition: background-color .2s ease;
+    }
+    .max.active{
+        background-color: #FB207F;
+    }
+    input:focus , select:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    
+    .deposite-button {
+        background-color: #FB207F;
+        color: #fff;
+        box-shadow: none;
+        border-radius: 12px;
+        transition: all .2s ease;
+        font-size: 16px;
+        height: 50px;
+        width: 100%;
+        font-weight: bold;
+        text-align: center;
+        border: none;
+        &:disabled {
+            opacity: 0.4;
+        }
+    }
+    .deposite-button:active,.deposite-button:focus {
+        background-color: #FB207F !important;
+        color: #fff !important;
+        box-shadow: none!important;
+        border: none!important;
+    }
+    .cazi-bal{
+        font-size: 2rem;
+        color: #FB207F;
+        font-weight: bold;
+    }
+    .percentage-blocks{
+        display: flex;
+        margin: 10px 10px 30px 10px;
+        .block{
+            border: 1px solid #FB207F;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin: 0px 5px;
+            font-size: 12px;
+        }
+    }
+    .verification-toggle{
+        display: flex;
+        margin-top: 10px;
+        span{
+            margin-right: 5px;
+            margin-top:5px;
+            display: inline-block;
+            position: relative;
+            top: -7px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .txt.ttl {
+            font-size: 24px;
+            text-align: center;
+        }
+ 
+        .cazi-bal {
+            font-size: 24px;           
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .deposit-form{
+            padding: 27px 30px 30px 30px;
+        }
+
+        .form-label {
+            font-size: 16px;
+        }
+
+        .desposite-input-container {
+            font-size: 14px;
+        }
+    }
+ 
+    @media screen and (max-width : 480px) {
+        .deposit-form{
+            padding: 27px 20px 30px 20px;
+        }
+    }
+ 
+    @media screen and (max-width : 375px) {
+        .transaction-fee{
+            font-size: 12px;
+            margin-top: 4px;
+        }
+ 
+        .txt.ttl {
+            font-size: 18px;
+        }
+ 
+        .cazi-bal {
+            font-size: 20px;           
+        }
+    }
+}

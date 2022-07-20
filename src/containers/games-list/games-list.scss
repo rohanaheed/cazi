@@ -1,0 +1,171 @@
+.gamesList{
+  padding: 0 3%;
+  .gamesListHeader {
+    margin-bottom: 25px;
+    margin-right: -25px;
+    margin-left: -25px;
+  }
+  .outer-div {
+    position: absolute;
+    z-index: 1;
+    inset: 0px;
+    height: calc(100% - 52px);
+  }
+  .inner-div {
+    background-color: rgba(15, 22, 31, 0.7);
+    border-radius: 0.5rem;
+    transition: opacity 0.2s ease-in-out 0s;
+    height: 100%;
+    opacity: 0;
+    z-index: -99999;
+  }
+  .inner-div:hover {
+    opacity: 1;
+  }
+  .play-icon {
+    height: 1.25rem;
+    width: auto;
+  }
+  .play-icon-div {
+    position: absolute;
+    top: calc(50% - 1.25rem);
+    left: 40%;
+    padding: 8px 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  .game-card{
+    margin: 10px 0px;
+  }
+  .headerText {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .card {
+    border: unset;
+    background-color: transparent;
+    // margin: 0px 8px;
+    width: 97%;
+    cursor: pointer;
+  }
+  .card-body {
+    padding: 1.25rem 0px;
+  }
+  .card-img-wr{
+    background: #D8E0E3;
+    height: 0;
+    padding-bottom: 56%;
+    position: relative;
+  }
+  .card-subtitle {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .card-text {
+    color: rgb(134, 151, 162);
+    font-size: 14px;
+  }
+  .card-img {
+    border-radius: 10px;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    &.SAGAMING{
+      height: auto !important;
+    }
+  }
+  .go2642161244 {
+    cursor: pointer;
+    background: rgb(216, 224, 227);
+    border: 0.0625rem solid rgb(234, 238, 240);
+    min-height: 2.5rem;
+    border-radius: 2.5rem;
+    width: 147px;
+    font-size: 0.75rem;
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  .go2642161244 .dropdown-heading-value {
+    padding: 11px 0;
+    height: 100%
+  }
+  .go2646822163 {
+    border: none;
+    position: relative;
+    bottom: 6px;
+  }
+  .go2139093995 {
+    @media only screen and (min-width: 768px) {
+      float: right;
+    }
+  }
+  .go2139093995:focus {
+    outline: unset;
+  }
+  .go2646822163:focus-within {
+    box-shadow: unset;
+    border-color: transparent;
+  }
+  .load-more-btn {
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    background: #fff;
+    border: unset;
+    border-radius: 20px;
+    background:#FB207F;
+    margin-top: 10px;
+    transition: .2s ease-in-out;
+    height: 2.5rem;
+    padding: 0 32px 0px 32px;
+    color: #fff;
+    img {
+      margin-left: 10px;
+      width: 13px;
+      padding-bottom: 2px;
+    }
+  }
+  .dropdown-content {
+    z-index: 2;
+    color: rgb(134, 151, 162);
+    background: #fff !important;
+  }
+  .col-spacing {
+    padding: 0 5px;
+  }
+  .hide-hive {
+    display: none;
+  }
+}
+
+.game-loader{
+  width: 100%;
+  height: 100%;
+  line-height: 400px;
+  text-align: center;
+  // .spinner-border{
+  //     color: red;
+  // }
+}
+.no-record{
+  text-align: center;
+  width: 100%;
+  line-height: calc(100vh - 280px);
+  height: calc(100vh - 280px);
+}
+
+.loader-img-div{
+    height: 0;
+    padding-bottom: 56%;
+    position: relative;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      object-position: center;
+    }
+}

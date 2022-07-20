@@ -1,0 +1,151 @@
+// @import '~bootstrap/scss/bootstrap';
+
+// .wallet-connect-list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     box-sizing: border-box;
+// }
+
+
+// .modal {
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: rgba(0,0,0,.6);
+//     z-index: 99999;
+// }
+
+// .modal {
+//     position: fixed;
+//     z-index: 1050;
+//     display: none;
+//     overflow: hidden;
+//     outline: 0;
+// }
+
+// .fade {
+//     transition: opacity .15s linear;
+// }
+
+// .connect-modal, .custom-backdrop {
+//     background: transparent!important;
+// }
+// .modal-dialog {
+//     position: relative;
+//     width: auto;
+//     margin: .5rem;
+//     pointer-events: none;
+// }
+// .modal-dialog-centered {
+//     display: flex;
+//     align-items: center;
+//     min-height: calc(100% - 1rem);
+// }
+
+// @media (min-width: 576px)
+// {
+// .modal-dialog {
+//     max-width: 500px;
+//     margin: 1.75rem auto;
+// }
+// }
+
+// @media (min-width: 576px)
+// {
+//     .modal-dialog-centered {
+//         min-height: calc(100% - 3.5rem);
+//     }
+// }
+// .modal .modal-dialog {
+//     display: flex;
+//     align-items: center;
+//     min-height: 80vh;
+// }
+
+// .modal.show .modal-dialog {
+//     transform: none;
+// }
+
+
+// .modal-dialog {
+//     position: relative;
+//     width: auto;
+//     margin: .5rem;
+//     pointer-events: none;
+// }
+// .modal .modal-connect-ui.whiteBg .custom-content {
+//     background: #fff;
+//     border: none;
+// }
+
+// @media (min-width: 768px)
+// {
+//     .modal .modal-connect-ui .modal-content {
+//         border-radius: 38px;
+//     }
+// }
+// .modal .modal-connect-ui .modal-content {
+//     background: linear-gradient(
+// 180deg
+// ,#00c7ff,#008fff);
+//     box-shadow: 0 0 10px #00b8ff;
+//     border-radius: 15px;
+//     color: #fff;
+// }
+
+
+// .modal .modal-dialog .modal-content {
+//     background: #fff;
+//     border: .5px solid #008fff;
+//     border-radius: 7.75px;
+// }
+// .modal-content {
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     pointer-events: auto;
+//     background-color: #fff;
+//     background-clip: padding-box;
+//     border: 1px solid rgba(0,0,0,.2);
+//     border-radius: .3rem;
+//     outline: 0;
+// }
+
+// .modal .modal-connect-ui .modal-content .modal-body {
+//     padding: 0;
+// }
+// .modal-body {
+//     position: relative;
+//     flex: 1 1 auto;
+//     padding: 1rem;
+// }
+
+// .modal .modal-connect-ui .modal-content {
+//     background: linear-gradient(
+// 180deg
+// ,#00c7ff,#008fff);
+//     box-shadow: 0 0 10px #00b8ff;
+//     border-radius: 15px;
+//     color: #fff;
+// }
+
+// .modal-content {
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     pointer-events: auto;
+//     background-color: #fff;
+//     background-clip: padding-box;
+//     border: 1px solid rgba(0,0,0,.2);
+//     border-radius: .3rem;
+//     outline: 0;
+// }
+// .modal-dialog {
+//     position: relative;
+//     width: auto;
+//     margin: .5rem;
+//     pointer-events: none;
+// }

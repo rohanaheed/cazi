@@ -1,0 +1,330 @@
+.small-cards-container {
+  position: relative;
+  .card-img-wr{
+    img{
+      max-height: 131px;
+      border-radius: 10px;
+    }
+  }
+  .slider-container-title {
+    h5 {
+      font-weight: bold;
+      font-size: 18px;
+      margin-left: 10px;
+      margin-top: 30px;
+      margin-bottom: 25px;
+    }
+  }
+  .outer-div {
+    position: absolute;
+    z-index: 1;
+    inset: 0px;
+    height: calc(100% - 71px);
+  }
+  .inner-div {
+    background-color: rgba(15, 22, 31, 0.7);
+    border-radius: 0.5rem;
+    transition: opacity 0.2s ease-in-out 0s;
+    height: 100%;
+    opacity: 0;
+  }
+  .inner-div:hover {
+    opacity: 1;
+  }
+  .card {
+    border: unset;
+    background-color: transparent;
+    margin: 0px 8px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .card-body {
+    padding: 1.25rem 0px;
+  }
+  .card-subtitle {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .card-text {
+    color: rgb(134, 151, 162);
+    font-size: 14px;
+  }
+  .card-img {
+    border-radius: 10px;
+    max-height: 131px;
+  }
+  .swiper-container {
+    width: 100%;
+  }
+  .play-icon {
+    height: 1.25rem;
+    width: auto;
+  }
+  .play-icon-div {
+    position: absolute;
+    top: calc(50% - 1.25rem);
+    left: 40%;
+    padding: 8px 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-slide {
+    font-size: 18px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .swiper-banner-slide {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+  .swiper-slide .title {
+    font-family: 'Bellefair', serif;
+    font-size: 41px;
+    line-height: 40px;
+    font-weight: 300;
+  }
+  .swiper-slide .subtitle {
+    font-size: 21px;
+  }
+  .swiper-slide .text {
+    font-size: 21px;
+    letter-spacing: 1px;
+  }
+  .slide-info-container {
+    color: #000;
+  }
+  .swiper-block {
+    padding: 40px 0 40px;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+  }
+  .swiper-block .swiper-container {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+  }
+  .swiper-block .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-button-prev {
+    background-image: url("https://d2qrsf0anqrpxl.cloudfront.net/assets/images/left-arrow-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    margin-top: -171px;
+    margin-left: 110px;
+    transform: rotate(180deg);
+  }
+  .swiper-button-prev::after {
+    display: none;
+  }
+  .swiper-button-next {
+    background-image: url("https://d2qrsf0anqrpxl.cloudfront.net/assets/images/left-arrow-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    margin-top: -170px;
+    margin-right: 85%;
+  }
+  .swiper-button-next::after {
+    display: none;
+  }
+  .swiper-button-next ,.swiper-button-prev{
+    display: none;
+  }
+  .previous-custom img{
+    transform: rotate(180deg);
+  }
+  .swiper-container{
+    position: static !important;
+  }
+  .next-custom{
+    background-image: url("https://d2qrsf0anqrpxl.cloudfront.net/assets/images/right-arrow-icon.svg");
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    cursor: pointer;
+    toP: -3px;
+    right: 7px;
+    // left: 230px;
+  }
+  .previous-custom{
+      background-image: url("https://d2qrsf0anqrpxl.cloudfront.net/assets/images/left-arrow-icon.svg");
+      background-repeat: no-repeat;
+      width: 28px;
+      height: 28px;
+      position: absolute;
+      cursor: pointer;
+      top: -3px;
+      right: 47px;
+      // left: 190px;
+  }
+
+  .previous-custom:focus , .next-custom:focus {
+    outline: none;
+  }
+  .Testimonials{
+    padding: 0 15px;
+    border: 1px solid #ececec;
+    position: relative;
+    min-height:270px;
+    .star{
+      position: absolute;
+      bottom: 15px;
+      svg{
+        margin-left: 5px;
+      }
+    }
+    svg{
+      margin-top: 15px;
+    }
+    .info-text{
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      max-height: 6.25rem;
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      color: rgb(134, 151, 162);
+      overflow: hidden;
+      margin: 0px;
+    }
+    .testimonial-header{
+      display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        max-height: auto;
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        overflow: hidden;
+        margin: 0px 0px 0.75rem;
+        color: rgb(15, 22, 31);
+        padding-bottom: 0;
+        max-height: auto;
+        border-bottom: 0px solid transparent;
+        background: transparent;
+        padding: 0;
+    }
+  }
+  // .nextC{
+  //   position: absolute;
+  //   toP: -1px;
+  //   left: 215px;
+  // }
+  // .prevC {
+  //   position: absolute;
+  //   top: -1px;
+  //   left: 173px;
+  // }
+  .header-sp{
+    display: inline-block;
+    position: relative;
+    right: -8px;
+    top: 5px;
+    @media only screen and (max-width: 360px) {
+      font-size: 1rem;
+      width: 150px;
+      word-break: break-word;
+    }
+  }
+  .headerText {
+    img {
+      @media only screen and (max-width: 360px) {
+        vertical-align: top;
+      }
+      &.bestTableGame{
+        position: relative;
+        left: -3px;
+      }
+      &.gameProvider{
+        position: relative;
+        left:-2px;
+      }
+      &.newGames{
+        position: relative;
+        left:-2px;
+      }
+    }
+  }
+  // .previous-custom.Game_Slots{
+  //   left: 216px;
+  // }
+  // .next-custom.Game_Slots{
+  //   left:256px
+  // }
+  // .previous-custom.Providers{
+  //   left: 197px;
+  // }
+  // .next-custom.Providers{
+  //   left:238px
+  // }
+
+}
+// .placeholder{
+//   background: linear-gradient(to right, #D8D8D8, #FFFFFF);
+//   background-image: linear-gradient(to right, #D8D8D8, #FFFFFF);
+//   width:100%;
+//   height: 200px;
+//   display: flex;
+// }
+
+.loader-container {
+  width:100%;
+  height: 200px;
+  display: flex;
+  background-color: white;
+}
+@media (max-width:640px) {
+  .small-cards-container .card-body{
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .small-cards-container .slider-container-title h5{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .small-cards-container .next-custom,
+  .small-cards-container .previous-custom{
+    top: 2px;
+  }
+  .small-cards-container .card-img{
+    object-fit:cover;
+    height: 100%;
+  }
+
+}

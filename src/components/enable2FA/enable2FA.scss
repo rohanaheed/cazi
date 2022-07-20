@@ -1,0 +1,55 @@
+.enable-2Fa-modal{
+    .modal-content{
+        border: none;
+        border-radius: 15px;
+    }
+    .modal-body{
+        text-align: center;
+        padding: 30px;
+    }
+    h3{
+        color: #FB207F;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .sub-title{
+        letter-spacing: .5px;
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+    .qr-code-div{
+        img{
+            margin: 0 30px 20px 30px !important;
+        }
+    }
+    .btn-div{
+        margin-top: 30px;
+        button{
+            background-color: #FB207F;
+            color: #fff;
+            box-shadow: none;
+            border-radius: 12px;
+            transition: all .2s ease;
+            font-size: 16px;
+            height: 50px;
+            width: 100%;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+        }
+    }
+    .google-code{
+        p{
+            margin-bottom: 5px;
+
+        }
+        .gogle-code-input{
+            height: 50px;
+            border-radius: 10px;
+            border: 2px solid #FB207F;
+            width: 100%;
+        }
+    }
+    
+}

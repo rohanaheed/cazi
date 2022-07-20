@@ -1,0 +1,140 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all linear 10ms!important;
+  }
+  
+  .modal-main {
+    position:fixed;
+    background: white;
+    width: 40%;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0.25rem 1rem 0px;
+    transition: all linear 10ms!important;
+  }
+  
+  .display-block {
+    display: block;
+  }
+  
+  .display-none {
+    display: none;
+  }
+
+  .disconnect-wallet-modal{
+    @media only screen and (max-height: 370px) {
+        top: 60%;
+    }
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    z-index: 9999999999999999;
+    .modal-body {
+        padding: 0;
+    }
+
+    .modal-title {
+        font-size: 18px;
+    }
+
+    .modal-content {
+        border-radius: 15px;
+        border:unset;
+    }
+
+    .display-block {
+        display: block;
+    }
+      
+    .display-none {
+        display: none;
+    }
+    
+    .modal-open {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .modal.fade{
+        display: contents;
+    }
+    .modal-dialog{
+        transition: none !important;
+        transform : none!important;
+        margin: 0px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .modal-header{
+        text-align: center;
+        display: block;
+        padding-top: 10px;
+    }
+    .modal-body-inner{
+        position: relative;
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        @media all and (max-width: 500px) {
+            font-size: 14px;
+        }
+        span {
+            display: inline-flex;
+            align-items: center;
+        }
+        svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .copy{
+            color: grey;
+            font-size: 17px;
+            cursor: pointer;
+            @media all and (max-width: 500px) {
+                font-size: 12px;
+            }
+        }
+        .copy:hover{
+            color: black;
+        }
+    }
+    .disconnect-btn{
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+        button{
+            background-color: #FB207F;
+            color: white;
+            border-radius: 10px;
+            width: 100%;
+            font-weight: bold;
+            padding: 9px 0;
+            font-size: 18px;
+            @media all and (max-width: 500px) {
+                font-size: 14px;
+            }
+        }
+    }
+    .copy-msg{
+        padding-left: 0;
+        color: #4f8a10;
+        position: absolute;
+        bottom: -10px;
+        font-size: 14px;
+        left: 0;
+        &.fadeOut {
+            height: auto !important;
+        }
+    }
+}

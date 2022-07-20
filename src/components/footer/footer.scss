@@ -1,0 +1,126 @@
+.footer-section {
+    padding-bottom: 40px;
+    padding-top: 60px;
+    a:hover {
+        text-decoration: unset;
+        color: rgb(255, 79, 15);
+    }
+    .m-0 {
+        margin: 0;
+    }
+    .top-border {
+        display: block;
+        border-width: 1px 0px 0px;
+        border-color: rgb(234, 238, 240);
+        border-style: solid;
+        padding-bottom: 10px;
+        margin: 10px 15px 0 15px;
+    }
+    .footer-header {
+        font-size: 16px;
+        line-height: 1.25rem;
+        font-weight: bold;
+        color: rgb(15, 22, 31);
+        margin-bottom: 15px;
+    }
+    .upper-most-div {
+        .accordian {
+            @media only screen and (min-width: 1300px) {
+                display: none;
+            }
+        }
+        .listing {
+            @media only screen and (max-width: 1299px) {
+                display: none;
+            }
+        }
+        .MuiAccordion-rounded {
+            border-radius: 5px !important;
+            margin-bottom: 5px;
+        }
+        .MuiPaper-elevation1 {
+            box-shadow: unset;
+            border: 1px solid #EAEAEA;
+        }
+        .MuiAccordion-root:before {
+            background-color: unset;
+        }
+        .MuiCollapse-wrapperInner {
+            padding: 0px 15px;
+            margin-top: -10px;
+        }
+        @media only screen and (max-width: 990px) {
+            .btc-upper-div {
+                display: flex;
+                justify-content: center;
+                margin: 10px 0;
+            }
+        }
+        .btc-div {
+            background: rgb(255, 255, 255);
+            border-radius: 2.5rem;
+            padding: 8px;
+            text-align: center;
+            span {
+                color: #000;
+            }
+            strong {
+                color: rgb(134, 151, 162);
+            }
+        }
+        .left-desc {
+            margin: 0px;
+            line-height: 21px;
+            color: #8697a2;
+            margin-bottom: 15px;
+            font-size: 14px;
+            margin-right: 65px;
+        }
+    }
+    .links {
+        color: rgb(134, 151, 162);
+        font-size: 14px;
+        line-height: 35px;
+        cursor: pointer;
+    }
+    .footer-icons {
+        width: 2.5rem;
+        height: auto;
+        margin: 0px 0.25rem 0.25rem 0px;
+        &.right-icons {
+            margin: 0px 1.25rem 0.25rem 0px;
+        }
+    }
+    .lower-icons {
+        display: inline-block;
+        width: 7.5rem;
+        margin: 0px 0.45rem 0.25rem 0px;
+    }
+}
+.eightenLogo{
+    margin-right:20px;
+}
+
+@media (min-width:320px) and (max-width:480px){
+    .first-accordian{
+        .MuiAccordionSummary-content.Mui-expanded{
+            margin:0;
+        }
+    }
+    .footer-section{
+        .links{
+            display: block;
+            padding: 10px 0 0 0;
+
+        }
+    }
+    .game-panel{
+        .MuiAccordionSummary-content.Mui-expanded{
+            margin: 0 !important;
+        }
+    }
+
+    .MuiAccordionSummary-root.Mui-expanded {
+        min-height: 41px !important;
+    }
+}

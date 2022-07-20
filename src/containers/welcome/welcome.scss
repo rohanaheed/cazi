@@ -1,0 +1,27 @@
+h2{
+    color:red
+}
+
+@media all and (max-width: 440px) {
+     .phone-space {
+        padding: 0;
+        overflow-x: hidden;
+
+        .row .col{
+            margin: 0;
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .container-fluid {
+        .col-sm-12 {
+            > .row {
+                > .col {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

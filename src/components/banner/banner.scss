@@ -1,0 +1,249 @@
+.home-banner {
+    background-size: 101% auto;
+    min-height: 450px;
+    font-family: Poppins;
+    font-style: normal;
+    color: #FFFFFF;
+    border-radius: 0.75rem;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-bottom: 40px;
+    margin: 0 7px;
+    overflow: hidden;
+    background-color: #FB207F !important;
+    font-family: Poppins;
+    font-style: normal;
+    color: #FFFFFF;
+    border-radius: 0.75rem;
+    border: none;
+    position: relative;
+
+    .banner-title {
+        margin-bottom: 0;
+        font-family: "Averta Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    } 
+
+    .home-banner-badges {
+        display: flex;
+        padding: 18px 0 0 0;
+        @media only screen and (max-width: 768px) {
+            padding: 10px 0 0 0;
+        }
+        font-family: "Averta Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+
+    .home-banner-badge {
+        display: flex;
+        padding-right: 1rem;
+        align-items: flex-start;
+        // text-shadow: rgb(62,13,104) 0px 0px 0.0625rem;
+    }
+    
+    .home-banner-badge h6 {
+        margin: 0px 0px 0.25rem;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        line-height: 1.25rem;
+    }
+
+    .home-banner-badge p {
+        margin: 0px;
+        font-size: 14px;
+        line-height: 19px;
+        color: white;
+        margin-bottom: 22px;
+    }
+
+    .home-banner-badge img {
+        margin-right: 0.75rem;
+        width: 35px;
+        position: relative;
+        top: -4px;
+    }
+    .card-img-overlay {
+        position: absolute;
+        padding: 12px 6px 0 25px;
+        background: rgba(255, 41, 88, 0.6);
+        max-width: 920px;
+        width:100%;
+        bottom: 0;
+        top: unset;
+        right: unset;
+    }
+
+    
+
+    @media screen and (min-width: 1500px)  {
+    #banner-card-title {
+        font-weight: 500;
+        max-height: 7rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        color: #FFFFFF;
+        margin-bottom: 0; 
+        }
+   }
+
+    @media screen and (min-width: 768px) and (max-width: 1498px)  {
+        #banner-card-title {
+            font-size: 2rem;
+            text-shadow: none;
+        }
+    }
+
+    .card-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    // .card-btns {
+    //     .btn {
+    //         min-width: 7rem;
+    //         height: 40px;
+    //         border-radius: 2.5rem;
+    //         font-size: 16px;
+    //         margin-right: 10px;
+    //         font-family: "Averta Std";
+    //         &.btn-primary {
+    //             background-color: #FB207F;
+    //             border-color: #FB207F;
+    //             color: rgb(255, 255, 255);
+    //         }
+    //     }
+    // }
+}
+
+@media screen and (min-width: 1700px)  {
+    .home-banner {
+        min-height: 520px;    
+    }
+}
+
+@media screen and (min-width: 1800px)  {
+    .home-banner {
+        min-height: 580px;    
+    }
+}
+
+@media screen and (min-width: 1900px)  {
+    .home-banner {
+        min-height: 660px;    
+    }
+}
+
+@media screen and (max-width: 1600px)  {
+    .home-banner {
+        min-height: 470px;
+    }
+}
+
+@media screen and (max-width: 1400px)  {
+    .home-banner {
+        min-height: auto;
+        .card-img-overlay {
+            max-width: 710px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px)  {
+    .home-banner {
+        min-height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home-banner {
+        background-size: auto 100% ;
+        min-height: 325px;
+    }
+    .banner-title{
+        font-size: 19px !important;
+        width: 100% !important;
+        font-family: "Averta Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+    .banner-image-overlay{
+        padding: 12px 12px 0 12px;
+    }
+    // .card-btns{
+    //     text-align: center;
+    // }
+
+    .home-banner #banner-card-title {
+        font-size: 24px !important;
+        width: 100% !important;
+        margin-bottom: 0;
+    }
+
+    .home-banner .home-banner-badge {
+        padding-right: 5px; 
+        p {
+            margin-bottom: 18px;
+        }
+    }
+    .res-img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .home-banner .home-banner-badge p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .home-banner .home-banner-badge img {
+        width: 28px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .home-banner {
+        .card-img-overlay {
+            top: unset;
+            width: 100%;
+        }
+        .home-banner-badge {
+            padding-right: 0;
+            width: 100%;
+            margin-bottom: 10px;
+            img {
+                width: 25px;
+            }
+            p {
+                display: none;
+            }
+        }
+        #banner-card-title {
+            font-size: 18px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .banner-title{
+        font-size: 15px !important;
+    }
+    .home-banner .home-banner-badges {
+        display: none;
+    }
+}
+
+
+// .readMoreButton{
+//     min-width: 7rem;
+//     height: 40px;
+//     border-radius: 2.5rem;
+//     font-size: 16px;
+//     margin-right: 10px;
+//     font-family: "Averta Std";
+//     color: #f8f9fa;
+//     border-color: #f8f9fa;
+//     &:hover{
+//     color: #212529;
+//     background-color: #f8f9fa;
+//     border-color: #f8f9fa;
+//     }
+// }
